@@ -28,3 +28,29 @@ name text,
 mobile text
 );
 
+APIs to test:
+
+Get all Entities
+GET
+http://localhost:8080/api/entities
+
+Get a specific Entity
+GET
+http://localhost:8080/api/entities/{id}
+
+Create Entity
+POST
+http://localhost:8080/api/entities
+{
+    "id":"f8fa0e2e-326f-11eb-adc1-0242ac120112",
+    "name":"CILUser2",
+    "mobile":"123456782"
+}
+
+Update Entity
+PUT
+http://localhost:8080/api/entities/{id}
+
+Delete Entity
+DELETE
+http://localhost:8080/api/entities/{id}
